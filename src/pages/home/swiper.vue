@@ -10,7 +10,7 @@
             :radius-dot="setting.radiusDot"
             :trigger="setting.trigger"
             :arrow="setting.arrow">
-            <CarouselItem v-for="item in swiperImgs">
+            <CarouselItem v-for="(item, index) in swiperImgs"  :key="index">
                 <div class="demo-carousel"><img :src="item.imgurl" /></div>
             </CarouselItem>
         </Carousel>

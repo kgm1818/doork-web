@@ -32,12 +32,22 @@
                         <span class="dot"></span>
                         <span class="flow-num">48.1万</span>
                     </div>
-                    <ul class="barrage">
-                        <li>
-                            <img src="../../assets/head.png" />
-                            <span>回归初心，巡演开启</span>
-                        </li>
-                    </ul>
+                    <div class="barrage-wrap">
+                        <ul class="barrage">
+                            <li>
+                                <img src="../../assets/head.png" />
+                                <span>回归初心，巡演开启</span>
+                            </li><br />
+                            <li>
+                                <img src="../../assets/head.png" />
+                                <span>回归初心，巡演开启</span>
+                            </li><br />
+                            <li>
+                                <img src="../../assets/head.png" />
+                                <span>回归初心，巡演开启</span>
+                            </li>
+                        </ul>
+                    </div>
                </div>
            </div>
         </section>
@@ -50,7 +60,19 @@
             return {
 
             }
-        }
+        },
+        created() {
+            
+
+        },
+        mounted() {
+            let $barrage = document.querySelector(".barrage");
+            // setInterval(function (){
+               
+                $barrage.style.top = $barrage.offsetTop - 5 + 'px';
+            // },500)
+
+         },
     }
 </script>
 <style scoped lang="less">
@@ -120,14 +142,26 @@
                 height: 100%;
                 background: rgba(0,0,0,0.2);
             }
+            .barrage-wrap{
+                position: absolute;
+                left: 0.3rem;
+                top: 1.2rem;
+                border: 1px solid lightcoral;
+                height: 1.86rem;
+                overflow: hidden;
+                width: 100%;
+            }
             .barrage{
-
+                position: absolute;
+                left: 0;
+                top: 0;
                 li{
                     padding: 0.05rem 0.15rem 0.05rem 0.10rem;
                     overflow: hidden;
                     background: #999;
                     border-radius: 5px;
                     display: inline-block;
+                    margin-bottom: 0.05rem;
                     img{
                         float: left;
                         width: 0.4rem;
@@ -145,5 +179,6 @@
                 }
             }
         }
+        
     }
 </style>
