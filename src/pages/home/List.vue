@@ -66,10 +66,29 @@
 
         },
         mounted() {
-            let $barrage = document.querySelector(".barrage");
+            let $barrage = document.querySelector(".barrage"),
+                $barrageLi = $barrage.querySelectorAll('li');
+                let translateY = 0;
+                let liHeight;
+                // setInterval(function (){
+                    translateY-=1;
+                    Array.from($barrageLi).forEach((el, index) => {
+                        liHeight = el.clientHeight;
+                        el.translateY = translateY;
+                        el.style.transform = `translateY(${translateY}px)`;
+
+                        if(el.translateY >= (index + 2)*liHeight){
+                            el.style.opacity = '0.5';
+                        }
+                    })
+                // }, 500)
+               
+                // setInterval(function (){
+                    
+                // }, 500)
             // setInterval(function (){
                
-                $barrage.style.top = $barrage.offsetTop - 5 + 'px';
+                // $barrage.style.top = $barrage.offsetTop - 5 + 'px';
             // },500)
 
          },
@@ -149,12 +168,12 @@
                 border: 1px solid lightcoral;
                 height: 1.86rem;
                 overflow: hidden;
-                width: 100%;
+                width: 80%;
             }
             .barrage{
                 position: absolute;
                 left: 0;
-                top: 0;
+                top: 1.86rem;
                 li{
                     padding: 0.05rem 0.15rem 0.05rem 0.10rem;
                     overflow: hidden;
