@@ -2,13 +2,19 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
-import iview from 'iview'
-import 'iview/dist/styles/iview.css'
 import router from '@/router'
-import '@/common/rem.js'
+
+// 引入flexible
+import 'lib-flexible'
+import '@/common/rest.css'
+import '@/common/basc.scss'
 import FastClick from 'fastclick'
+import { Button } from 'vant'
+
 Vue.config.productionTip = false
-Vue.use(iview)
+
+
+Vue.use(Button)
 
 // 处理300毫秒延迟问题及双击问题
 if ('addEventListener' in document) {

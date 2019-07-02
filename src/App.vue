@@ -15,9 +15,7 @@
   }
 </script>
 
-<style lang='less'>
-@import './style/rest.less';
-@import './style/common.less';
+<style lang='scss'>
 body,html{
   width: 100%;
   height: 100%;
@@ -33,7 +31,7 @@ body,html{
   height: 100%;
 }
 .foot-nav{
-  height: 44px;
+  height: 88px;
   width: 100%;
   display: flex;
   position: fixed;
