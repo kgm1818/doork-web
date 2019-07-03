@@ -3,17 +3,24 @@
       <section class="home__block">
           test
           <p class="home__block__label">文案。。。</p>
+          <van-button type="primary">默认按钮</van-button>
       </section>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'Home',
   data () {
     return {
     }
-  }
+  },
+  created() {
+      console.log(this.$route)
+  },
+  mounted() {
+      this.$toast("文字大小异常")
+  },
 }
 </script>
 

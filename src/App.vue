@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <router-view></router-view>
-    <nav class="foot-nav">
-      <router-link to="/">首页</router-link>
-      <router-link to="/showsLibrary">演出库</router-link>
-      <router-link to="/myjuooo">我的</router-link>
+    <nav class="tab-nav">
+      <router-link to="/">主页</router-link>
+      <router-link to="/showsLibrary">动态</router-link>
+      <router-link to="/myjuooo">收藏</router-link>
     </nav>
   </div>
 </template>
@@ -24,38 +24,36 @@ body,html{
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* text-align: center;
-  color: #2c3e50;
-  margin-top: 60px; */
   width: 100%;
   height: 100%;
 }
-.foot-nav{
+.tab-nav{
   height: 88px;
   width: 100%;
-  display: flex;
   position: fixed;
   left: 0;
   bottom: 0;
+  display: flex;
   justify-content: space-around;
   align-items: center;
   background: #fff;
-}
-.foot-nav:before{
-  content: '';
-  display: block;
-  width: 100%;
-  height: 1px;
-  border-bottom: 1px solid #e6e6e6;
-  position: absolute;
-  left: 0;
-  top: -1px;
-  transform: scaleY(0.5);
-}
-.foot-nav a{
-  color: #333;
-}
-.foot-nav a.router-link-exact-active{
-  color: #ff7919;
+  &::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #e6e6e6;
+    position: absolute;
+    left: 0;
+    top: -1px;
+    transform: scaleY(0.5);
+  }
+  a{
+    color: #333;
+    font-size: 24px;
+    &.router-link-exact-active{
+      color: #ff7919;
+    }
+  }
 }
 </style>
