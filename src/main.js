@@ -8,8 +8,9 @@ import router from '@/router'
 import 'lib-flexible'
 import '@/common/rest.css'
 import '@/common/basc.scss'
+
 import FastClick from 'fastclick'
-import { Button, Toast } from 'vant'
+import { Button, Toast, } from 'vant'
 
 Vue.config.productionTip = false
 
