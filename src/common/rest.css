@@ -1,16 +1,77 @@
-body, div, span, header, footer, nav, section, img,
-aside, article, ul, dl, dt, dd, li, a, p, h1, h2, h3, h4,h5, h6, i, 
-b, textarea, button, input, select, figure, figcaption{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    font-style: normal;
-    text-decoration: none;
-    border: none;
-    color: #232323;
-    font-weight: normal;
-    font-family: "Microsoft Yahei";
-    box-sizing: border-box;
-    -webkit-tap-highlight-color:transparent;
-    -webkit-font-smoothing: antialiased;
+/*初始化样式及公共样式*/
+@charset "utf-8";
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: none;
+  /* 禁用webkit内核浏览器的文字大小调整功能*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  outline: 0;
+}
+html, body, div, iframe
+ul, li, ol, dl, dd, dt,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+fieldset, form, label, legend,
+table, thead, tbody, tfoot, caption, tr, td, th,
+article, header, nav, menu, aside, section, footer, figure, figcaption,
+time, video, audio, mark,
+summary, hgroup, embed, details, canvas,
+del, em, i, b, u, sub, sup, code, cite, strong, big, small, address, abbr, img, a, span{
+  margin: 0;
+  padding: 0;
+}
+ul, ol, li{
+  list-style: none;
+}
+article, header, nav, menu, aside, section, footer, figure, figcaption{
+  display: block;
+}
+em,i{
+  font-style: normal;
+}
+label, button, input, button, textarea, select{
+  outline: none;
+  font-weight: normal;
+}
+textarea{
+  resize:none;
+}
+button{
+  user-select: none;
+}
+table{
+  border-collapse: collapse;
+}
+img{
+  border:none;
+  border-color:transparent;
+  vertical-align:middle;
+  width: 100%;
+  height: 100%;
+}
+a:link,a:visited, a:hover, a:active{
+  text-decoration: none;
+  outline: none;
+}
+a{
+  outline: none;
+  color: #232323;
+}
+input, button, textarea, select{
+  background:transparent;
+  border: none;
+  appearance:transparent;
+}
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+body{
+  -webkit-font-smoothing: antialiased;
+}
+html,
+body{
+  width: 100%;
+  height: 100%;
+  background: #fefefe;
+  /* line-height: 1; */
 }
