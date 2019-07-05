@@ -54,9 +54,6 @@ const wxShare = {
             wx.onMenuShareQZone(shareData);
         })
     },
-    isShareErr(){
-
-    },
 }
 // **配置微信信息**
 wx.config({

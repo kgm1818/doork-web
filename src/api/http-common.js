@@ -1,2 +1,3 @@
-// 请求异常处理
+// 请求处理
+import $http from 'axios'
 import ResponseError from './response-error'

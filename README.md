@@ -22,6 +22,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
     第三步：修改为
 ```
 ![utils](./src/assets/企业微信截图_15620508842180.png "区块链")
+
 3. 适配问题
 ```
    # cnpm run lib-flexible -S 
@@ -31,7 +32,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
     // 将px 转换 rem 
     // 配置见 **.postcssrc.js**
 ```
-3. vant 用法
+4. vant 用法
  ```
   # cnpm i vant -s 
   
@@ -49,4 +50,5 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
   
   // vant 用的rem 比例（37.5）与本项目比例（75）不同
   // 在.postcssrc.js中修改配置即可（见该文件）
+  
  ```

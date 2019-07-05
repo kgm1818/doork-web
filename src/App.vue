@@ -36,7 +36,7 @@ body,html{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: #fff;
+  background: #fefefe;
   &::before{
     content: '';
     display: block;
