@@ -9,12 +9,12 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 #### 用法
 1. 使用scss
 ```
-    cnpm run  sass-loader -D
-    cnpm run  node-sass -D
+    cnpm install  sass-loader -D
+    cnpm install  node-sass -D
 ```
 2. 如果需要全局引入.scss文件的配置
 ```
-    第一步：cnpm run  sass-resources-loader -D
+    第一步：cnpm install  sass-resources-loader -D
     第二步：在项目里找到build/utils文件 如下:
 ```
 ![utils](./src/assets/企业微信截图_15620506734616.png "区块链")
@@ -25,7 +25,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 3. 适配问题
 ```
-   # cnpm run lib-flexible -S 
+   # cnpm install lib-flexible -S 
     // 在main.js中引入`import 'lib-flexible'`
     
    # cnpm install postcss-pxtorem -D 
@@ -43,7 +43,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
     
   // 在.babelrc文件中配置plugins（插件）
   `"plugins": [
-    "transform-vue-jsx", 
+    "transform-vue-jsx",
     "transform-runtime",
     ["import", { "libraryName": "vant", "style": true }]
   ],`
