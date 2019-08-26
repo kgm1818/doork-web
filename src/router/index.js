@@ -9,5 +9,10 @@ export default new Router({
         name: 'Home',
         path: '/',
         component: () => import("@/pages/Home") 
+    },
+    {
+        name: 'Gridcard',
+        path: '/gridcard',
+        component: () => import("@/pages/Gridcard") 
     }]
 })
