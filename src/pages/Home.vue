@@ -5,6 +5,7 @@
           <p class="home__block__label">文案。。。</p>
           <van-button type="primary">默认按钮</van-button>
           <a class="" href="/gridcard"> gridcard</a>
+          <a class="" href="/canvas"> canvas </a>
       </section>
   </div>
 </template>

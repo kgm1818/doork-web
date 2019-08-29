@@ -14,5 +14,10 @@ export default new Router({
         name: 'Gridcard',
         path: '/gridcard',
         component: () => import("@/pages/Gridcard") 
+    },
+    {
+        name: 'canvas',
+        path: '/canvas',
+        component: () => import("@/pages/canvas") 
     }]
 })
