@@ -1,15 +1,11 @@
+
 <template>
   <div class="page">
     <div class="gridcard">
-      <div class="gridcard_item"
-      v-for = "(item, idx) in card" 
-      :key="idx"  
-      :class="{back:item.isBack,move:item.isMove}" 
-      :data-idx="idx"  
-      @click = "onClick" >
+      <div v-for = "(item, idx) in card" :key="idx"  class="gridcard_item" :class="{back:item.isBack,move:item.isMove}" :data-idx="idx"  @click = "onClick" >
         <div>
           <div class="gridcard_front">
-            <img src = "../../static/images/card_front.png"/>
+            <img src = "/static/images/card_front.png"/>
           </div>
           <div class="gridcard_back">
             <div class="award">{{item.award}}</div>
@@ -217,7 +213,7 @@
   .gridcard .gridcard_item .gridcard_back{
     -webkit-transform: rotateY(180deg) translateZ(0);
     transform: rotateY(180deg) translateZ(0);
-    background: #1E9FD9;
+    background: rgba(222,186,145,1);
   }
   .award {
     z-index: 2;
