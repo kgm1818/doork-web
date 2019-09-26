@@ -104,6 +104,7 @@ export function getDateWeek(startTime, endTime){
 
 /*
  *  解决iOS调出输入法后页面不回退的兼容问题
+ *  
  */
 export function temporaryRepair(){ 
     let currentPosition, timer;
@@ -117,3 +118,28 @@ export function temporaryRepair(){
         clearInterval(timer);
     }, 1);
 }
+
+/**
+ * 数组随机排序
+ * Date: 2019/9/25
+ * 
+ * */
+
+export function shuffle(data) {
+    let _data = [...data];
+    let len = _data.length;
+    let end = len - 1 ;
+    for(let i=0; i<len; i++){
+        let index = Math.floor(Math.random() * len);
+        let temp = _data[end];
+        _data[end] = _data[index];
+        _data[index] =temp;
+    }
+    return _data;
+ }
+
+ /**
+ * 倒计时
+ * Date: 2019/9/25
+ * 
+ * */
