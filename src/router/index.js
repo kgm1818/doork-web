@@ -18,6 +18,11 @@ export default new Router({
     {
         name: 'canvas',
         path: '/canvas',
-        component: () => import("@/pages/canvas") 
+        component: () => import("@/pages/Canvas") 
+    },
+    {
+        name: 'SeatMap',
+        path: '/seat-map',
+        component: () => import("@/pages/SeatMap") 
     }]
 })

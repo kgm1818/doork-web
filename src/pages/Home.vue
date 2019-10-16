@@ -8,6 +8,7 @@
           <a href="javascript: ;" @click="$router.push('/canvas')"> canvas </a>
           <span>countDownServer</span>
           <span>{{ countDownText }}</span>
+          <span @click="$router.push('/seat-map')"> SeatMap </span>
       </section>
   </div>
 </template>
